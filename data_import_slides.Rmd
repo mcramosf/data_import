@@ -107,7 +107,7 @@ dfn2 %>%
 
 ### Step 2: Take care of general aspects (column names, metadata, and NAs)
 
-#### Focus on most commonly used function read_csv
+#### Focus on most commonly used function `read_csv`
 
 ---
 
