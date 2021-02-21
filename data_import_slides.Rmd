@@ -37,7 +37,6 @@ library(tidyverse)
 
 * parsing vectors
 
-* writing files
 
 ---
 class: middle, center, middle
