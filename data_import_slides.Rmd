@@ -77,7 +77,7 @@ dfn <- data.frame(`readr function` = c("read_csv( )",
                                "read_fwf( )",
                                "read_table( )", 
                                "read_log( )"),
-                  `file format`=c("comma delimited", "semicolon delimited", "tab delimited", "any delimited", "fixed width", "fized width delimited by white space", "Apache style files"))
+                  `file format`=c("comma delimited", "semicolon delimited", "tab delimited", "any delimited", "fixed width", "fixed width delimited by white space", "Apache style files"))
 dfn %>%
    knitr::kable("html")
 ```
@@ -111,7 +111,7 @@ dfn2 %>%
 
 ---
 
-by default, read_csv() reads first line as column names
+by default, `read_csv()` reads first line as column names
 
 ## Problem focused strategies 
 
@@ -144,8 +144,8 @@ dfn3 %>%
 ## General file parsing strategies 
 
 * column by column assess parsing and correct (if needed)
-* use problems() to see parsing problems
-* use argument col_types = cols() to specify the correct parsing for each column
+* use `problems()` to see parsing problems
+* use argument `col_types = cols()` to specify the correct parsing for each column
 
 
 ```{r, eval=FALSE}
@@ -170,14 +170,14 @@ myfile <- read_csv("filepath.csv",
            ))
 ```
 
-* If working with very large file, use argument n_max to increase the number of rows used to parse. 
+* If working with very large file, use argument `n_max` to increase the number of rows used to parse. 
 
 ---
 # Parsing vectors 
 
 ### Parsing a file versus parsing vectors 
 
-parse_*() takes a character vector and transforms it into a vector of another type. 
+`parse_*()` takes a character vector and transforms it into a vector of another type. 
 
 .center[
 ```{r, echo=FALSE}
@@ -207,7 +207,7 @@ dfn5 %>%
 
 * Parsing failures will be missing from the output
 
-* Use problems() to get complete list of failures
+* Use `problems()` to get complete list of failures
 
 ---
 

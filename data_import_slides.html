@@ -94,7 +94,7 @@ class: middle, center, middle
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:left;"&gt; read_table( ) &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; fized width delimited by white space &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; fixed width delimited by white space &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:left;"&gt; read_log( ) &lt;/td&gt;
@@ -146,7 +146,7 @@ class: middle, center, middle
 
 ---
 
-by default, read_csv() reads first line as column names
+by default, `read_csv()` reads first line as column names
 
 ## Problem focused strategies 
 
@@ -200,8 +200,8 @@ by default, read_csv() reads first line as column names
 ## General file parsing strategies 
 
 * column by column assess parsing and correct (if needed)
-* use problems() to see parsing problems
-* use argument col_types = cols() to specify the correct parsing for each column
+* use `problems()` to see parsing problems
+* use argument `col_types = cols()` to specify the correct parsing for each column
 
 
 
@@ -228,14 +228,14 @@ myfile &lt;- read_csv("filepath.csv",
            ))
 ```
 
-* If working with very large file, use argument n_max to increase the number of rows used to parse. 
+* If working with very large file, use argument `n_max` to increase the number of rows used to parse. 
 
 ---
 # Parsing vectors 
 
 ### Parsing a file versus parsing vectors 
 
-parse_*() takes a character vector and transforms it into a vector of another type. 
+`parse_*()` takes a character vector and transforms it into a vector of another type. 
 
 .center[
 &lt;table&gt;
@@ -306,7 +306,7 @@ parse_*() takes a character vector and transforms it into a vector of another ty
 
 * Parsing failures will be missing from the output
 
-* Use problems() to get complete list of failures
+* Use `problems()` to get complete list of failures
 
 ---
 
